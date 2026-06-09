@@ -1,6 +1,6 @@
 package 実力確認問題;
 
- public class 演算子1 {
+ public class Chapter2_1 {
 	 /**
 	  * "Hello World"を出力します。
 	  */
