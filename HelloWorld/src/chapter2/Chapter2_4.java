@@ -1,10 +1,11 @@
 package chapter2;
 /**
- * int型の変数xの値を3倍にした後、その値を半分にするプログラムです。
+ * int型の変数xの値を3倍にし、その後半分にした値を出力するプログラムです。
  */
  public class Chapter2_4 {
     /**
-     * メインメソッド
+     * 変数xの値を3倍にし、その後半分にした値を出力します。
+     * 
      * @param args プログラム起動時の引数
      */
      public static void main(String[] args) {

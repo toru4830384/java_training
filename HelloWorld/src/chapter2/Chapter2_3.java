@@ -4,7 +4,8 @@ package chapter2;
  */
  public class Chapter2_3 {
 	/**
-	 * メインメソッド
+	 * 変数xとyの値を入れ替え、入れ替えた前と後の値を出力します。
+	 * 
 	 * @param args プログラム起動時の引数
 	 */
 	 public static void main(String[] args) {

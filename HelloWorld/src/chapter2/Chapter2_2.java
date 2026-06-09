@@ -1,10 +1,11 @@
 package chapter2;
 /**
- * str1・2に代入した文字列を結合し出力するプログラムです。
+ * 2つの文字列を結合し出力するプログラムです。
  */
  public class Chapter2_2 {
 	 /** 
-	  * メインメソッド
+	  * 文字列「Hello」と「World!」を結合し出力します。
+	  * 
 	  * @param args プログラム起動時の引数
 	  */
 	 public static void main(String[] args) {
