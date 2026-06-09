@@ -4,6 +4,7 @@ package chapter2;
  */
  public class Chapter2_2 {
 	 /** 
+	  * メインメソッド
 	  * @param args プログラム起動時の引数
 	  */
 	 public static void main(String[] args) {

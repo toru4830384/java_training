@@ -1,9 +1,10 @@
 package chapter2;
 /**
- * 2つの値の入れ替えた前後の値を出力するプログラムです。
+ * 2つの値を入れ替えた前後の値を出力するプログラムです。
  */
  public class Chapter2_3 {
 	/**
+	 * メインメソッド
 	 * @param args プログラム起動時の引数
 	 */
 	 public static void main(String[] args) {
