@@ -8,8 +8,8 @@ import java.io.*;
 	  /**
 	   * 入力した点数に沿った成績を表示します。
 	   * 
-	   * @param args
-	   * @throws IOException
+	   * @param args　プログラム起動時の引数
+	   * @throws IOException　キーボードからの入力処理に失敗した場合
 	   */
 	  public static void main(String[] args) throws IOException
 		{
