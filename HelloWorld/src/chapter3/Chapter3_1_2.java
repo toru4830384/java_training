@@ -1,6 +1,8 @@
 package chapter3; 	
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 /**
  * 入力された点数に沿った評価を表示するプログラムです。
  */
@@ -20,14 +22,18 @@ import java.io.*;
 			
 	        int num = Integer.parseInt(br.readLine());
 	        
-            if (num >= 80) {
-	            System.out.println("たいへんよくできました。");
+	        if (num >= 0 && num <= 100) {
+	        
+               if (num >= 80) {
+	               System.out.println("たいへんよくできました。");
+	           } else if (num >= 60) {
+	               System.out.println("よくできました。");
+	           } else {
+	               System.out.println("ざんねんでした。");
+	           }
+               
+	        } else {
+	        	System.out.println("点数は0~100点で入力してください。");
 	        }
-	          else if (num >= 60) {
-	            System.out.println("よくできました。");
-	          }
-	            else {
-	            	System.out.println("ざんねんでした。");
-	            }
-	     }
-}
+	    }
+ }

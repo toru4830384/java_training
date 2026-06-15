@@ -1,6 +1,8 @@
 package chapter3; 	
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 /**
  * 入力された点数から合否を判定するプログラムです。
  */
@@ -21,11 +23,16 @@ import java.io.*;
 			
 	        int num = Integer.parseInt(br.readLine());
 	        
-            if (num >= 60) {
-	            System.out.println("合格です。");
-	            }
-	          else {
-	            System.out.println("不合格です。");
-	          }
+	        if (num >= 0 && num <=100) {
+	        
+               if (num >= 60) {
+            	   System.out.println("合格です。");
+               } else {
+	               System.out.println("不合格です。");
+	           }
+               
+	        } else {
+	        	System.out.println("点数は0~100点で入力してください。");
+	        }
 	   }
  }
