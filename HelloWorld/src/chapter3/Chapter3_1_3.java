@@ -10,8 +10,8 @@ import java.io.IOException;
 	  /**
 	   * 入力した点数に沿った成績を表示します。
 	   * 
-	   * @param args　プログラム起動時の引数
-	   * @throws IOException　キーボードからの入力処理に失敗した場合
+	   * @param args プログラム起動時の引数
+	   * @throws IOException キーボードからの入力処理に失敗した場合
 	   */
 	  public static void main(String[] args) throws IOException {
 		  
@@ -22,18 +22,14 @@ import java.io.IOException;
 			
 	        int num = Integer.parseInt(br.readLine());
 	        
-	        if (num >= 0 && num <= 100) {
-	        
-               if (num >= 80) {
-	               System.out.println("優");
-	           } else if (num >= 70) {
-            	   System.out.println("良");
-               } else if (num >= 60) {
-            	   System.out.println("良");
-               } else {
-            	   System.out.println("不可");
-               }
-               
+	        if (num >= 80 && num <= 100) {
+	            System.out.println("優");
+	        } else if (num >= 70) {
+         	    System.out.println("良");
+            } else if (num >= 60) {
+         	    System.out.println("可");
+            } else if (num >= 0) {
+         	    System.out.println("不可");
 	        } else {
 	        	System.out.println("点数は0~100点で入力してください。");
 	        }

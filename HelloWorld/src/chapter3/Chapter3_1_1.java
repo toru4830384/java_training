@@ -22,14 +22,10 @@ import java.io.IOException;
 			
 	        int num = Integer.parseInt(br.readLine());
 	        
-	        if (num >= 0 && num <=100) {
-	        
-               if (num >= 60) {
-            	   System.out.println("合格です。");
-               } else {
-	               System.out.println("不合格です。");
-	           }
-               
+	        if (num >= 60 && num <=100) {
+	        	System.out.println("合格です。");
+	        } else if (num >= 0 && num < 60) {
+	        	System.out.println("不合格です。");                
 	        } else {
 	        	System.out.println("点数は0~100点で入力してください。");
 	        }
