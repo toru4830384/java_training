@@ -14,8 +14,7 @@ import java.io.IOException;
 	   * @param args プログラム起動時の引数
 	   * @throws IOException キーボードからの入力処理に失敗した場合
 	   */
-	  public static void main(String[] args) throws IOException
-		{
+	  public static void main(String[] args) throws IOException {
 			System.out.println("試験の点数を入力してください。");
 			
 			BufferedReader br = 
@@ -34,5 +33,5 @@ import java.io.IOException;
 	        } else {
 	        	System.out.println("点数は0~100点で入力してください。");
 	        }
-	   }
+	  }
  }

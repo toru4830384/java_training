@@ -33,5 +33,5 @@ import java.io.IOException;
 	        if (x < y || x % 2 == 0) {
 	        	System.out.println(x + "は" + y + "より小さい、または、" + x + "は偶数である。");
 	        }
-	   }
+	  }
  }
