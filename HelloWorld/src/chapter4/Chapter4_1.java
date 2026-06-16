@@ -10,8 +10,7 @@ package chapter4;
 	   * 
 	   * @param args プログラム起動時の引数
 	   */
-	  public static void main(String[] args)
-		{
+	  public static void main(String[] args) {
 		  
 			String[][] contracts = {
 					{"中村","5000","2000"},
@@ -32,6 +31,6 @@ package chapter4;
 			   }
 			}
 			
-			System.out.println("遅延利息金が発生している人数は" + count + "人です。");
-		}
+			System.out.println("遅延利息金が発生している人数は" + count + "人です。");		
+	  }
  }
