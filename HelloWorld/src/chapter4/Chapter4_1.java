@@ -22,15 +22,13 @@ public class Chapter4_1 {
 		int count = 0;
 
 		for (int i = 0; i < contracts.length; i++) {
-			System.out.println("契約者名:" + contracts[i][0] 
-					+ "、保険料:" + contracts[i][1] + "円");
+			System.out.println("契約者名:" + contracts[i][0] + "、保険料:" + contracts[i][1] + "円");
 
 			if (!contracts[i][2].equals("")) {
 				count++;
 			}
 		}
 
-		System.out.println("遅延利息金が発生している人数は" 
-		                   + count + "人です。");
+		System.out.println("遅延利息金が発生している人数は" + count + "人です。");
 	}
 }

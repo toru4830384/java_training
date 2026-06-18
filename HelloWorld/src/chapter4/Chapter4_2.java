@@ -10,17 +10,16 @@ import java.io.IOException;
  */
 public class Chapter4_2 {
 	
-/**
- * 商品名、単価、支払金額を入力して
- * 支払金額の不足有無、不足金額の合計を表示します。
- * 
- * @param args プログラム起動時の引数
- * @throws IOException キーボードからの入力処理に失敗した場合
- */
+	/**
+	 * 商品名、単価、支払金額を入力して
+	 * 支払金額の不足有無、不足金額の合計を表示します。
+	 * 
+	 * @param args プログラム起動時の引数
+	 * @throws IOException キーボードからの入力処理に失敗した場合
+	 */
 	public static void main(String[] args) throws IOException {
 
-		BufferedReader br = 
-				new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		String[][] products = new String[3][3];
 
@@ -43,13 +42,11 @@ public class Chapter4_2 {
         	int pay = Integer.parseInt(products[i][2]);
         	
         	if (pay < price) {
-        		System.out.println(products[i][0] + "、" + 
-        	                       price + "円、支払金額不足");
+        		System.out.println(products[i][0] + "、" + price + "円、支払金額不足");
         		
         		total += price - pay; 
         	} else {
-        		System.out.println(products[i][0] + "、" + 
-	                       price + "円、支払金額過不足無し");
+        		System.out.println(products[i][0] + "、" + price + "円、支払金額過不足無し");
         	}
         }
         
