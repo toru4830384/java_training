@@ -5,37 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 商品情報を管理するクラスです。
- */
-class Product {
-
-	String name;
-	int price;
-	double tax = 0.1;
-
-	void setName(String name) {
-		this.name = name;
-	}
-
-	String getName() {
-		return name;
-	}
-
-	void setPrice(int price) {
-		this.price = price;
-	}
-
-	int getPrice() {
-		return price;
-	}
-
-	int getTotalPrice() {
-		return (int) (price * (1 + tax));
-	}
-}
-
-/**
- * 商品名と金額を入力し、 税込の購入額を表示するプログラムです。
+ * 商品名と金額を入力し、税込の購入額を表示するプログラムです。
  */
 public class Chapter5_1 {
 

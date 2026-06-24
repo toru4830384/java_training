@@ -5,40 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 計算値と演算子を管理するクラスです。
- */
-class Calculation {
-
-	int num1;
-	int num2;
-	String operator;
-
-	void setNum1(int num1) {
-		this.num1 = num1;
-	}
-
-	int getNum1() {
-		return num1;
-	}
-
-	void setNum2(int num2) {
-		this.num2 = num2;
-	}
-
-	int getNum2() {
-		return num2;
-	}
-
-	void setOperator(String operator) {
-		this.operator = operator;
-	}
-
-	String getOperator() {
-		return operator;
-	}
-}
-
-/**
  * 数値と演算子を入力し、計算結果を表示するプログラムです。
  */
 public class Chapter5_2 {
@@ -69,7 +35,7 @@ public class Chapter5_2 {
 		calculation.setOperator(operator);
 
 		int result = 0;
-
+		
 		if (calculation.getOperator().equals("+")) {
 			result = calculation.getNum1() + calculation.getNum2();
 		} else if (calculation.getOperator().equals("-")) {
@@ -78,8 +44,11 @@ public class Chapter5_2 {
 			result = calculation.getNum1() * calculation.getNum2();
 		} else if (calculation.getOperator().equals("/")) {
 			result = calculation.getNum1() / calculation.getNum2();
+		} else {
+		    System.out.println("使用できる演算子は + - * / のみです。");
+		    return;
 		}
-
+		
 		System.out.println("計算結果：" + result);
 	}
 }
