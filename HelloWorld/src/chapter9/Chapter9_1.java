@@ -18,14 +18,6 @@ class Chapter9_1 {
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-		CalculateBase[] calc = {
-				new Add(), new Sub(), new Div(), new Mul()
-		};
-		
-		String[] operator = {
-				"+", "-", "/", "*"
-		};
 		
 		System.out.println("1~4の中から計算したい値を1つ選んでください。");
 		System.out.println("1:足し算");
@@ -33,7 +25,38 @@ class Chapter9_1 {
 		System.out.println("3:割り算");
 		System.out.println("4:掛け算");
 		
-		int select = Integer.parseInt(br.readLine());
+		int select;
+		
+		try {
+			select = Integer.parseInt(br.readLine());
+		} catch (NumberFormatException e) {
+			System.out.println("1~4の数字を入力してください。");
+			return;
+		}
+		
+		CalculateBase calc = null;
+		String operator = "";
+		
+		switch (select) {
+		case 1: calc = new Add();
+		        operator = "+";
+		        break;
+		        
+		case 2: calc = new Sub();
+                operator = "-";
+                break;
+        
+		case 3: calc = new Div();
+                operator = "/";
+                break;
+        
+		case 4: calc = new Mul();
+                operator = "*";
+                break;
+        
+        default: System.out.println("1~4を入力してください。");
+        return;
+		}
 		
 		System.out.println("1つ目の数字を入力してください。");
 		int x = Integer.parseInt(br.readLine());
@@ -41,8 +64,8 @@ class Chapter9_1 {
 		System.out.println("2つ目の数字を入力してください。");
 		int y = Integer.parseInt(br.readLine());
 		
-		int result = calc[select - 1].calculate(x, y);
+		int result = calc.calculate(x, y);
 		
-		System.out.println(x + " " + operator[select - 1] + " " + y + " = " + result);
+		System.out.println(x + " " + operator + " " + y + " = " + result);
 	}
 }
