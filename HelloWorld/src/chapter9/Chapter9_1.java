@@ -4,8 +4,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
+/**
+ * 四則演算を行うクラスです。
+ */
 class Chapter9_1 {
+	
+	/**
+	 * 演算方法を選択して2つの整数を入力し、計算結果を表示します。
+	 * 
+	 * @param args プログラム起動時の引数
+	 * @throws IOException キーボードからの入力処理で失敗した場合
+	 */
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
