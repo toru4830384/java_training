@@ -18,8 +18,6 @@ class Chapter9_2 {
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-		Process process;
 		
 		System.out.println("処理モードを選んでください。");
 		System.out.println("1:Aモード");
@@ -31,6 +29,8 @@ class Chapter9_2 {
 			System.out.println("1または2を入力してください。");
 			return;
 		}
+		
+		Process process = null;
 		
 	    if (mode == 1) {
 	    	process = new ProcessA();
