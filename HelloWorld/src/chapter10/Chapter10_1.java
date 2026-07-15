@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 /**
  * Processクラスを利用した処理を行うクラスです。
  */
-class Chapter10_1 {
+public class Chapter10_1 {
 
 	/**
 	 * 処理モードを選択して名前と年齢を入力し、処理を行います。

@@ -3,7 +3,17 @@ package chapter10;
 /**
  * Aモードの処理を行うクラスです。
  */
-public class ProcessA extends Process {
+public class ProcessA implements Process {
+	
+	/**
+	 * 名前
+	 */
+	private String name;
+	
+	/**
+	 * 年齢
+	 */
+	private int age;
 
 	/**
 	 * 名前と年齢をチェックします。
@@ -17,6 +27,18 @@ public class ProcessA extends Process {
 		if (name.length() >= 10 || age < 0 || age > 140) {
 			throw new CustomException("入力エラーです。");
 		}
+	}
+	
+	/**
+	 * 名前と年齢を設定します。
+	 * 
+	 * @param name 名前
+	 * @param age 年齢
+	 */
+	@Override
+	public void setting(String name, int age) {
+		this.name = name;
+		this.age = age;
 	}
 
 	/**

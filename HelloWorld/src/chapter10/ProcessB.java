@@ -3,8 +3,18 @@ package chapter10;
 /**
  * Bモードの処理を行うクラスです。
  */
-public class ProcessB extends Process {
+public class ProcessB implements Process {
 
+	/**
+	 * 名前
+	 */
+	private String name;
+	
+	/**
+	 * 年齢
+	 */
+	private int age;
+	
 	/**
 	 * 名前と年齢をチェックします。
 	 * 
@@ -17,6 +27,18 @@ public class ProcessB extends Process {
 		if (name.length() < 5 || name.length() > 20 || age < 30 || age > 60) {
 			throw new CustomException("入力エラーです。");
 		}
+	}
+	
+	/**
+	 * 名前と年齢を設定します。
+	 * 
+	 * @param name 名前
+	 * @param age 年齢
+	 */
+	@Override
+	public void setting(String name, int age) {
+		this.name = name;
+		this.age = age;
 	}
 
 	/**
