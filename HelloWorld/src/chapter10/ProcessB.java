@@ -14,7 +14,7 @@ public class ProcessB extends Process {
 	 */
 	@Override
 	public void check(String name, int age) throws CustomException {
-		if (!(name.length() >= 5 && name.length() <= 20 && age >= 30 && age <= 60)) {
+		if (name.length() < 5 || name.length() > 20 || age < 30 || age > 60) {
 			throw new CustomException("入力エラーです。");
 		}
 	}
